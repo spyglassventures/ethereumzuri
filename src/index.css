@@ -10,8 +10,10 @@
   --clr-white: #FFFFFF;
   --clr-black: #202020;
   --clr-grey: #707070;
-  --clr-blue: #6C63FF;
-  --clr-blue-2: #4c46b6;
+  /*--clr-blue: #6C63FF; */
+  --clr-blue: #b90e0e;
+  /* --clr-blue-2: #4c46b6; */
+  --clr-blue-2: #b90e0e;
   --clr-green: #4fb646;
 }
 
