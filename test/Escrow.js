@@ -7,7 +7,7 @@ const tokens = (n) => {
 
 describe('Escrow', () => {
     let buyer, seller, inspector, lender
-    let realEstate, escrow
+    let car, escrow
 
     beforeEach(async () => {
         // Setup accounts
@@ -15,23 +15,23 @@ describe('Escrow', () => {
 
         // Deploy Real Estate
         const RealEstate = await ethers.getContractFactory('RealEstate')
-        realEstate = await RealEstate.deploy()
+        car = await RealEstate.deploy()
 
-        // Mint 
-        let transaction = await realEstate.connect(seller).mint("https://ipfs.io/ipfs/QmTudSYeM7mz3PkYEWXWqPjomRPHogcMFSq7XAvsvsgAPS")
+        // Mint
+        let transaction = await car.connect(seller).mint("https://gateway.ipfs.io/ipfs/QmdXBbfjwQZ3KcHFGhWxcobPkYojN3gL9qUcurjoSBdFX4")
         await transaction.wait()
 
         // Deploy Escrow
         const Escrow = await ethers.getContractFactory('Escrow')
         escrow = await Escrow.deploy(
-            realEstate.address,
+            car.address,
             seller.address,
             inspector.address,
             lender.address
         )
 
         // Approve Property
-        transaction = await realEstate.connect(seller).approve(escrow.address, 1)
+        transaction = await car.connect(seller).approve(escrow.address, 1)
         await transaction.wait()
 
         // List Property
@@ -42,7 +42,7 @@ describe('Escrow', () => {
     describe('Deployment', () => {
         it('Returns NFT address', async () => {
             const result = await escrow.nftAddress()
-            expect(result).to.be.equal(realEstate.address)
+            expect(result).to.be.equal(car.address)
         })
 
         it('Returns seller', async () => {
@@ -83,7 +83,7 @@ describe('Escrow', () => {
         })
 
         it('Updates ownership', async () => {
-            expect(await realEstate.ownerOf(1)).to.be.equal(escrow.address)
+            expect(await car.ownerOf(1)).to.be.equal(escrow.address)
         })
     })
 
@@ -154,7 +154,7 @@ describe('Escrow', () => {
         })
 
         it('Updates ownership', async () => {
-            expect(await realEstate.ownerOf(1)).to.be.equal(buyer.address)
+            expect(await car.ownerOf(1)).to.be.equal(buyer.address)
         })
 
         it('Updates balance', async () => {

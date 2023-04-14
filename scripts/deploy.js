@@ -16,21 +16,21 @@ async function main() {
 
   // Deploy Real Estate
   const RealEstate = await ethers.getContractFactory('RealEstate')
-  const realEstate = await RealEstate.deploy()
-  await realEstate.deployed()
+  const car = await RealEstate.deploy()
+  await car.deployed()
 
-  console.log(`Deployed Real Estate Contract at: ${realEstate.address}`)
+  console.log(`Deployed Car Contract at: ${car.address}`)
   console.log(`Minting 3 properties...\n`)
 
   for (let i = 0; i < 3; i++) {
-    const transaction = await realEstate.connect(seller).mint(`https://ipfs.io/ipfs/QmQVcpsjrA6cr1iJjZAodYwmPekYgbnXGo4DFubJiLc2EB/${i + 1}.json`)
+    const transaction = await car.connect(seller).mint(`https://gateway.ipfs.io/ipfs/QmdXBbfjwQZ3KcHFGhWxcobPkYojN3gL9qUcurjoSBdFX4/${i + 1}.json`)
     await transaction.wait()
   }
 
   // Deploy Escrow
   const Escrow = await ethers.getContractFactory('Escrow')
   const escrow = await Escrow.deploy(
-    realEstate.address,
+    car.address,
     seller.address,
     inspector.address,
     lender.address
@@ -38,11 +38,11 @@ async function main() {
   await escrow.deployed()
 
   console.log(`Deployed Escrow Contract at: ${escrow.address}`)
-  console.log(`Listing 3 properties...\n`)
+  console.log(`Listing 3 cars...\n`)
 
   for (let i = 0; i < 3; i++) {
     // Approve properties...
-    let transaction = await realEstate.connect(seller).approve(escrow.address, i + 1)
+    let transaction = await car.connect(seller).approve(escrow.address, i + 1)
     await transaction.wait()
   }
 
