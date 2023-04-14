@@ -20,7 +20,7 @@ async function main() {
   await car.deployed()
 
   console.log(`Deployed Car Contract at: ${car.address}`)
-  console.log(`Minting 3 properties...\n`)
+  console.log(`Minting 3 cars...\n`)
 
   for (let i = 0; i < 3; i++) {
     const transaction = await car.connect(seller).mint(`https://gateway.ipfs.io/ipfs/QmYti88tLmaMmPtTpeoDSBcFnBa7Qs9uQy14gXV4LXiAv5/${i + 1}.json`)
@@ -41,12 +41,12 @@ async function main() {
   console.log(`Listing 3 cars...\n`)
 
   for (let i = 0; i < 3; i++) {
-    // Approve properties...
+    // Approve cars...
     let transaction = await car.connect(seller).approve(escrow.address, i + 1)
     await transaction.wait()
   }
 
-  // Listing properties...
+  // Listing cars...
   transaction = await escrow.connect(seller).list(1, buyer.address, tokens(20), tokens(10))
   await transaction.wait()
 
