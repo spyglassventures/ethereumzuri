@@ -15,8 +15,8 @@ async function main() {
   const [buyer, seller, inspector, lender] = await ethers.getSigners()
 
   // Deploy Real Estate
-  const RealEstate = await ethers.getContractFactory('RealEstate')
-  const car = await RealEstate.deploy()
+  const Cars = await ethers.getContractFactory('Cars')
+  const car = await Cars.deploy()
   await car.deployed()
 
   console.log(`Deployed Car Contract at: ${car.address}`)

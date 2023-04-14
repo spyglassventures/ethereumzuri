@@ -7,7 +7,7 @@ import Search from './components/Search';
 import Home from './components/Home';
 
 // ABIs
-import RealEstate from './abis/RealEstate.json'
+import Cars from './abis/Cars.json'
 import Escrow from './abis/Escrow.json'
 
 // Config
@@ -28,7 +28,7 @@ function App() {
     setProvider(provider)
     const network = await provider.getNetwork()
 
-    const car = new ethers.Contract(config[network.chainId].car.address, RealEstate, provider)
+    const car = new ethers.Contract(config[network.chainId].car.address, Cars, provider)
     const totalSupply = await car.totalSupply()
     const homes = []
 

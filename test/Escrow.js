@@ -14,8 +14,8 @@ describe('Escrow', () => {
         [buyer, seller, inspector, lender] = await ethers.getSigners()
 
         // Deploy Real Estate
-        const RealEstate = await ethers.getContractFactory('RealEstate')
-        car = await RealEstate.deploy()
+        const Cars = await ethers.getContractFactory('Cars')
+        car = await Cars.deploy()
 
         // Mint
         let transaction = await car.connect(seller).mint("https://gateway.ipfs.io/ipfs/QmdXBbfjwQZ3KcHFGhWxcobPkYojN3gL9qUcurjoSBdFX4")
