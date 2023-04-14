@@ -1,5 +1,5 @@
 {
-    "name": "Architectural CA Modern Home",
+    "name": "Ether is cool",
     "address": "70780 Tamarisk Ln, Rancho Mirage, CA 92270",
     "description": "Beautiful modern home in Rancho Mirage",
     "image": "https://ipfs.io/ipfs/QmQUozrHLAusXDxrvsESJ3PYB3rUeUuBAvVWw6nop2uu7c/2.png",
@@ -11,7 +11,7 @@
         },
         {
             "trait_type": "Type of Residence",
-            "value": "Single family residence"
+            "value": "ETH HOME"
         },
         {
             "trait_type": "Bed Rooms",
