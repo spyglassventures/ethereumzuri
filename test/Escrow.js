@@ -18,7 +18,7 @@ describe('Escrow', () => {
         car = await Cars.deploy()
 
         // Mint
-        let transaction = await car.connect(seller).mint("https://gateway.ipfs.io/ipfs/QmdXBbfjwQZ3KcHFGhWxcobPkYojN3gL9qUcurjoSBdFX4")
+        let transaction = await car.connect(seller).mint("https://gateway.ipfs.io/ipfs/QmYti88tLmaMmPtTpeoDSBcFnBa7Qs9uQy14gXV4LXiAv5")
         await transaction.wait()
 
         // Deploy Escrow

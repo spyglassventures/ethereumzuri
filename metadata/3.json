@@ -1,33 +1,33 @@
 {
-    "name": "Polygon is nice too",
-    "address": "183 Woodland Drive, Camano Island, WA 98282",
-    "description": "Comfy island home on Camano Island",
-    "image": "https://gateway.ipfs.io/ipfs/QmQUozrHLAusXDxrvsESJ3PYB3rUeUuBAvVWw6nop2uu7c/3.png",
+    "name": "BMW 535d Touring xDrive Modern Line Steptronic",
+    "address": "8105 Regensdorf",
+    "description": "We will exchange your trade-in vehicle for a fair price.",
+    "image": "https://gateway.ipfs.io/ipfs/QmayyQzEfJGsh5AX6RBnysQXBXQgWR9236JWtoPz86d75D",
     "id": "3",
     "attributes": [
         {
             "trait_type": "Purchase Price",
-            "value": 10
+            "value": 5.60
         },
         {
-            "trait_type": "Type of Residence",
-            "value": "Single family residence"
+            "trait_type": "Type of Car",
+            "value": "Station Wagon"
         },
         {
-            "trait_type": "Bed Rooms",
-            "value": 3
+            "trait_type": "Doors",
+            "value": 5
         },
         {
-            "trait_type": "Bathrooms",
-            "value": 3
+            "trait_type": "Mileage",
+            "value": 241000
         },
         {
-            "trait_type": "Square Feet",
-            "value": 2202
+            "trait_type": "PS",
+            "value": 313
         },
         {
-            "trait_type": "Year Built",
-            "value": 2020
+            "trait_type": "Year",
+            "value": 2014
         }
     ]
 }

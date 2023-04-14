@@ -23,7 +23,7 @@ async function main() {
   console.log(`Minting 3 properties...\n`)
 
   for (let i = 0; i < 3; i++) {
-    const transaction = await car.connect(seller).mint(`https://gateway.ipfs.io/ipfs/QmdXBbfjwQZ3KcHFGhWxcobPkYojN3gL9qUcurjoSBdFX4/${i + 1}.json`)
+    const transaction = await car.connect(seller).mint(`https://gateway.ipfs.io/ipfs/QmYti88tLmaMmPtTpeoDSBcFnBa7Qs9uQy14gXV4LXiAv5/${i + 1}.json`)
     await transaction.wait()
   }
 

@@ -1,4 +1,5 @@
 artifacts/
+build/
 cache/
 node_modules/
 .DS_Store
