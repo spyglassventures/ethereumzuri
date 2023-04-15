@@ -17,9 +17,16 @@ I was ok with EUR, but I was worried about getting counterfeid bills. Also the b
 See: https://www.bazg.admin.ch/bazg/de/home/services/services-private/services-private-einfuhr/ausfuhrzollanmeldung-e-dec-web.html
 Blockchain can solve this! Züri Crypto Cars will solve this!
 
+## Why it matters
 ![](docs/2.png?raw=true)
+
+## Technology and Scope
 ![](docs/techstack.png?raw=true)
+
+## Buying process
 ![](docs/BUY.png?raw=true)
+
+## Exporting the customs form
 ![](docs/form.png?raw=true)
 Click Link to see example form: https://github.com/spyglassventures/ethereumzuri/blob/master/docs/Example_export_form.pdf
 
@@ -30,7 +37,7 @@ Using the Züri Crypto Cars NFT DApp, car owners can tokenize their vehicles and
 
 The Züri Crypto Cars NFT DApp uses smart contracts to ensure secure and transparent transactions on the Ethereum blockchain. All transactions are recorded on the blockchain, providing a permanent and immutable record of ownership and transfer.
 
-## Want to work this repo? Please do!
+## Want to work on this repo? Contribute, fork? Please do!
 To get started with Züri Crypto Cars NFT DApp, you will need an Ethereum wallet and some Ether (ETH) to purchase NFTs.
 
 
