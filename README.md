@@ -12,7 +12,7 @@ Its cool because it comes with:
 
 ## Motivation
 I came up with the idea, since I was selling my own car and most requests I got were for export. 
-Most people wanted to export my BMW to Eastern Europe and wanted to pay in cash, ideally not in CHF. 
+Most people calling me wanted to export my BMW to Eastern Europe. They all wanted to pay in cash, ideally not in CHF. 
 I was ok with EUR, but I was worried about getting counterfeid bills. Also the buyers has to deal with customs and fill out forms.
 See: https://www.bazg.admin.ch/bazg/de/home/services/services-private/services-private-einfuhr/ausfuhrzollanmeldung-e-dec-web.html
 Blockchain can solve this! Züri Crypto Cars will solve this!
