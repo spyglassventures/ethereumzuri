@@ -11,6 +11,10 @@ Its cool because it comes with a escrow and helps with the paperwork.
 I came up with the ideas, since I was selling my own car and most requests I got was for export. 
 People wanted to pay in cash and ideally no in CHF. I was worried about getting counterfeid 
 
+![](docs/2.png?raw=true)
+![](docs/techstack.png?raw=true)
+![](docs/form.png?raw=true)
+
 ## How it Works
 Users can browse and purchase NFTs representing a range of cars. Each NFT is a unique digital asset that represents ownership of a specific car.
 
