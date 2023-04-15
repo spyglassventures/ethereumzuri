@@ -31,7 +31,7 @@ Blockchain can solve this! Züri Crypto Cars will solve this!
 Click Link to see example form: https://github.com/spyglassventures/ethereumzuri/blob/master/docs/Example_export_form.pdf
 
 ## Future work
-Hash the customs form (XML file, including the transaction hash) submitted to tax authorities. Form is varifiable and unqiue, hence can serve as proof.
+Hash the customs form (XML file, including the transaction hash) submitted to tax authorities. Form is varifiable and unique, hence can serve as proof.
 
 
 ## How it Works
