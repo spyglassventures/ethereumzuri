@@ -6,7 +6,7 @@ Züri Crypto Cars NFT DApp is Ethereum market place, connecting buyer and seller
 
 Its cool because it comes with:
 - an escrow and 
-- helps with the paperwork.
+- helps with the paperwork
 
 ![](docs/1.png?raw=true)
 
