@@ -17,6 +17,7 @@ Blockchain can solve this! Züri Crypto Cars will solve this!
 ![](docs/2.png?raw=true)
 ![](docs/techstack.png?raw=true)
 ![](docs/form.png?raw=true)
+Click Link to see example form: https://github.com/spyglassventures/ethereumzuri/blob/master/docs/Example_export_form.pdf
 
 ## How it Works
 Users can browse and purchase NFTs representing a range of cars. Each NFT is a unique digital asset that represents ownership of a specific car.
