@@ -2,10 +2,15 @@
 
 Demolink: https://youtu.be/qtvSYP6mI7o
 
-Züri Crypto Cars NFT DApp is a decentralized application built on the Ethereum blockchain that allows car enthusiasts to buy and sell unique, non-fungible tokens (NFTs) representing cars (in particular my own one 😊)
+Züri Crypto Cars NFT DApp is Ethereum market place, connecting buyer and sellers of cars.
+Its cool because it comes with a escrow and helps with the paperwork.
+
+## Motivation
+I came up with the ideas, since I was selling my own car and most requests I got was for export. 
+People wanted to pay in cash and ideally no in CHF. I was worried about getting counterfeid 
 
 ## How it Works
-Users can browse and purchase NFTs representing a range of cars, from vintage classics to modern supercars. Each NFT is a unique digital asset that represents ownership of a specific car.
+Users can browse and purchase NFTs representing a range of cars. Each NFT is a unique digital asset that represents ownership of a specific car.
 
 Using the Züri Crypto Cars NFT DApp, car owners can tokenize their vehicles and sell them as NFTs, allowing others to invest in and own a piece of their favorite cars.
 
