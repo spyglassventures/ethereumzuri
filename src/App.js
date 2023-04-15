@@ -19,7 +19,7 @@ function App() {
 
   const [account, setAccount] = useState(null)
 
-  const [homes, setHomes] = useState([])
+  const [cars, setCars] = useState([])
   const [home, setHome] = useState({})
   const [toggle, setToggle] = useState(false);
 
@@ -30,16 +30,16 @@ function App() {
 
     const car = new ethers.Contract(config[network.chainId].car.address, Cars, provider)
     const totalSupply = await car.totalSupply()
-    const homes = []
+    const cars = []
 
     for (var i = 1; i <= totalSupply; i++) {
       const uri = await car.tokenURI(i)
       const response = await fetch(uri)
       const metadata = await response.json()
-      homes.push(metadata)
+      cars.push(metadata)
     }
 
-    setHomes(homes)
+    setCars(cars)
 
     const escrow = new ethers.Contract(config[network.chainId].escrow.address, Escrow, provider)
     setEscrow(escrow)
@@ -72,7 +72,7 @@ function App() {
         <hr />
 
         <div className='cards'>
-          {homes.map((home, index) => (
+          {cars.map((home, index) => (
             <div className='card' key={index} onClick={() => togglePop(home)}>
               <div className='card__image'>
                 <img src={home.image} alt="Home" />

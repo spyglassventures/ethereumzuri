@@ -47,13 +47,13 @@ async function main() {
   }
 
   // Listing cars...
-  transaction = await escrow.connect(seller).list(1, buyer.address, tokens(20), tokens(10))
+  transaction = await escrow.connect(seller).list(1, buyer.address, tokens(5.77), tokens(5.77))
   await transaction.wait()
 
-  transaction = await escrow.connect(seller).list(2, buyer.address, tokens(15), tokens(5))
+  transaction = await escrow.connect(seller).list(2, buyer.address, tokens(5.82), tokens(5.82))
   await transaction.wait()
 
-  transaction = await escrow.connect(seller).list(3, buyer.address, tokens(10), tokens(5))
+  transaction = await escrow.connect(seller).list(3, buyer.address, tokens(5.60), tokens(5.60))
   await transaction.wait()
 
   console.log(`Finished.`)
