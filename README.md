@@ -30,6 +30,10 @@ Blockchain can solve this! Züri Crypto Cars will solve this!
 ![](docs/form.png?raw=true)
 Click Link to see example form: https://github.com/spyglassventures/ethereumzuri/blob/master/docs/Example_export_form.pdf
 
+## Future work
+Hash the customs form (XML file, including the transaction hash) submitted to tax authorities. Form is varifiable and unqiue, hence can serve as proof.
+
+
 ## How it Works
 Users can browse and purchase NFTs representing a range of cars. Each NFT is a unique digital asset that represents ownership of a specific car.
 
